@@ -16,3 +16,7 @@ def start_message(message):
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
     bot.send_message(message.chat.id, message.text)
+#для картинок
+@bot.message_handler(content_types = ['photo'])
+def handle_photo(message):
+    bot.send_photo(message.chat.id, message.photo[0].file_id)
