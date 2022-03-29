@@ -32,3 +32,7 @@ def  handle_audio(message):
 @bot.message_handler(content_types = ['sticker'])
 def  handle_sticker(message):
     bot.send_sticker(message.chat.id, message.sticker.file_id)
+#для голосовых сообщений
+@bot.message_handler(content_types = ['voice'])
+def  handle_voice(message):
+    bot.send_voice(message.chat.id, message.voice.file_id)
