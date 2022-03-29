@@ -40,3 +40,6 @@ def  handle_voice(message):
 @bot.message_handler(content_types=['location'])
 def location(message):
     bot.send_location(message.chat.id, message.location.latitude, message.location.longitude)
+
+#Запуск бота
+bot.infinity_polling()
