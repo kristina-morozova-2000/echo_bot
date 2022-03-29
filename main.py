@@ -24,3 +24,7 @@ def handle_photo(message):
 @bot.message_handler(content_types = ['document'])
 def  handle_document(message):
     bot.send_document(message.chat.id, message.document.file_id)
+#для аудиозаписей
+@bot.message_handler(content_types = ['audio'])
+def  handle_audio(message):
+    bot.send_audio(message.chat.id, message.audio.file_id)
