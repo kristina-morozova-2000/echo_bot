@@ -20,3 +20,7 @@ def handle_text(message):
 @bot.message_handler(content_types = ['photo'])
 def handle_photo(message):
     bot.send_photo(message.chat.id, message.photo[0].file_id)
+#для документов
+@bot.message_handler(content_types = ['document'])
+def  handle_document(message):
+    bot.send_document(message.chat.id, message.document.file_id)
