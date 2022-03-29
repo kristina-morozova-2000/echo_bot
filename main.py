@@ -36,3 +36,7 @@ def  handle_sticker(message):
 @bot.message_handler(content_types = ['voice'])
 def  handle_voice(message):
     bot.send_voice(message.chat.id, message.voice.file_id)
+#для геолокации
+@bot.message_handler(content_types=['location'])
+def location(message):
+    bot.send_location(message.chat.id, message.location.latitude, message.location.longitude)
