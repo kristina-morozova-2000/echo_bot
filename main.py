@@ -28,3 +28,7 @@ def  handle_document(message):
 @bot.message_handler(content_types = ['audio'])
 def  handle_audio(message):
     bot.send_audio(message.chat.id, message.audio.file_id)
+#для стикеров
+@bot.message_handler(content_types = ['sticker'])
+def  handle_sticker(message):
+    bot.send_sticker(message.chat.id, message.sticker.file_id)
