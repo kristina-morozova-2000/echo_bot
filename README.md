@@ -13,15 +13,15 @@ ____
 Выполните команду, устанавливающую зависимости:
 ```python
 pip install -r requirements.txt
-```python
+```
 ____
 Необходимо создать telegram-бота и получить его токен (инструкция по [ссылке](https://tlgrm.ru/docs/bots)).
 Полученный токен скопируйте в файл .env. Запись в данном файле должна выглядеть следующим образом:
 ```python
 TOKEN_BOT='your_telegram_bot_token'
-```python
+```
 ____
 Для запуска бота выполните команду:
 ```python
 python3 main.py
-```python
+```
