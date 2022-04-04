@@ -65,4 +65,3 @@ def location(message):
 bot.infinity_polling()
 
 
-
