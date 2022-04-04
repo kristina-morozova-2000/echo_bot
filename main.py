@@ -63,3 +63,4 @@ def location(message):
 
 # Запуск бота
 bot.infinity_polling()
+
